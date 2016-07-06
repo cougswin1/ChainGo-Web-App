@@ -1,2 +1,2 @@
-# ChainGo-Web-App
+# ChainGo
 Web Application through Ruby
