@@ -1,6 +1,6 @@
 
  <div class="header">
-    <div class="top_image"><%= image_tag("ChainGoLogo.png", :alt => "rss feed") %> 
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -43,11 +43,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+                       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                  <div class="top_image"><%= image_tag("ChainGoLogo.png", class: "img-responsive img-center img-rounded round-image") %>
                     <li>
                         <a href="#">About</a>
                     </li>
@@ -55,7 +55,7 @@
                         <a href="#">Services</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#">Demo</a>
                     </li>
                 </ul>
             </div>
@@ -110,17 +110,19 @@
 
         <div class="row">
             <div class="col-sm-4">
-                <img class="img-circle img-responsive img-center" src="file:///Users/jordansorensen/Desktop/chaingo/app/assets/images/ocean-freight.jpg" class="image responsive" alt="">
+                <%= image_tag("ocean-freight.jpg", class: "img-circle img-responsive img-center img-rounded round-image") %>
+                <div class="round-image">
+                </div>
                 <h2>Maritime Trade</h2>
                 <p>International Maritime Trade accounts for 90% of worldwide trade. This enormous industry has been around for a long time and yet it is still hampered by several key problems: Beaurocratic inefficiency and fraud.</p>
             </div>
             <div class="col-sm-4">
-                <img class="img-circle img-responsive img-center" src="file:///users/jordansorensen/Desktop/chaingo/app/assets/images/papers.jpg" alt="">
+                <%= image_tag("Papers.jpg", class: "img-circle img-responsive img-center")  %>
                 <h2>Inefficient</h2>
                 <p>The entire shipping process, from import to export, is bloated with paperwork. The average container spends an extra 19 days in transit due to beaucratic delays. Most transports require a large array of documents from the Bill of Lading to customs paperwork, most documents are required in triplicate and quadruplacates.</p>
             </div>
             <div class="col-sm-4">
-                <img class="img-circle img-responsive img-center" src="file:///users/jordansorensen/Desktop/chaingo/app/assets/images/Blockchain.jpg" alt="">
+                <%= image_tag("Blockchain.jpg", class: "img-circle img-responsive img-center") %>
                 <h2>Fraud</h2>
                 <p>Despite the growth of Global Trade and the focus on eliminating fraud it is a perssistant issue. Blockchain technology is specifically aimed at providing a transparent and verified record of all transactions to ensure the elimination of fraud.</p>
             </div>
@@ -142,13 +144,9 @@
     </div>
     <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
 </body>
 
 </html>
-
